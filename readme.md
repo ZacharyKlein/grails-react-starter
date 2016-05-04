@@ -26,4 +26,5 @@ A starter project for a basic React/Webpack configuration within a Grails app.
 * Unified test suite (Mocha + `expect.js` for React tests, Spock for Grails unit/integration tests, with optional ability to run together)
 * Demonstrate loading of images/assets from the asset-pipeline from React/JSX
 * Demonstrate use of [React-bootstrap](http://react-bootstrap.github.io/)
+* Demonstrate use of webpack-dev-server hot-reloading
 * Suggestions?
