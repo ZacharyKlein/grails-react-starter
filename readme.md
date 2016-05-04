@@ -1,9 +1,9 @@
 #Grails/React Starter
 A starter project for a basic React/Webpack configuration within a Grails app.
 
-* [Grails](https://grails.org)
-* [React](https://facebook.github.io/react/)
-* [Webpack](https://webpack.github.io/)
+* [Grails](https://grails.org) - `3.1.6`
+* [React](https://facebook.github.io/react/) - `^15.0.1`
+* [Webpack](https://webpack.github.io/) - `^1.13.0`
 
 ##Notes:
 * Gradle-node plugin is used to wrap node/npm tasks and simplify build process
