@@ -2,7 +2,7 @@ module.exports = {
   entry: {
     // the "entry" point is where webpack "starts" it's processing - it will recursively pull in all the necessary imports and requires starting from here. 
     // You can specify multiple entry points if needed
-    index: './grails-app/views/src/app/index.js'
+    index: './grails-app/views/src/app/app.js'
   },
   output: {
     // "path" should be set to the root directory for your React source files
