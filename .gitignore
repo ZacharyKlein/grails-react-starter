@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+build/
+node_modules/
+out/
+prodDb.mv.db

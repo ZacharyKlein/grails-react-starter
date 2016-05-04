@@ -1,0 +1,18 @@
+#app {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webpack {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url("../images/webpack.gif");
+}
+
+img.center {
+    width: 150px;
+    margin: 0 auto;
+}
