@@ -27,4 +27,6 @@ A starter project for a basic React/Webpack configuration within a Grails app.
 * Demonstrate loading of images/assets from the asset-pipeline from React/JSX
 * Demonstrate use of [React-bootstrap](http://react-bootstrap.github.io/)
 * Demonstrate use of webpack-dev-server hot-reloading
+* Redux?
+* Websockets?
 * Suggestions?
