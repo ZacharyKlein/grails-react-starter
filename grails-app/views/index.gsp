@@ -60,10 +60,8 @@
         <div id="app">
 
         </div>
-        <!-- The webpack-generated bundle  -->
-
-        <webpack:bundle file="bundle.js" />
-
+        <!-- The webpack-generated bundle -->
+        <webpack:bundle file="bundle.js" devServer="true"/>
     </section>
 </div>
 

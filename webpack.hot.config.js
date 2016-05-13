@@ -6,7 +6,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
-        './grails-app/views/src/app/app.js'
+        './src/main/js/app/app.js'
     ],
     output: {
         path: __dirname + '/grails-app/assets/javascripts/',
@@ -21,7 +21,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loaders: ['react-hot', 'babel'],
-                include: path.join(__dirname, 'grails-app/views/src')
+                include: path.join(__dirname, 'src/main/js')
             },
             {
                 test: /\.css$/,

@@ -28,6 +28,7 @@
     "bootstrap": "^3.3.6",
     "immutable": "^3.8.1",
     "react": "^15.0.1",
+    "react-bootstrap": "^0.29.4",
     "react-dom": "^15.0.1"
   }
 }

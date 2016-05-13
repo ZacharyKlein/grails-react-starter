@@ -1,8 +1,10 @@
+var path = require('path');
+
 module.exports = {
   entry: {
     // the "entry" point is where webpack "starts" it's processing - it will recursively pull in all the necessary imports and requires starting from here. 
     // You can specify multiple entry points if needed
-    index: './grails-app/views/src/app/app.js'
+    index: './src/main/js/app/app.js'
   },
   output: {
     // "path" should be set to the root directory for your React source files
@@ -34,7 +36,7 @@ module.exports = {
         // "query" - options to pass to the loader
 
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: path.join(__dirname, 'src/main/js'),
         loader: 'babel',
         query: {
           presets: ['es2015', 'react']

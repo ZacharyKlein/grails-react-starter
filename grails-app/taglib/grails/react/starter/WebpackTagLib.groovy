@@ -10,13 +10,17 @@ class WebpackTagLib {
     static String DEFAULT_BUNDLE_NAME = 'bundle.js'
 
     @Value('${webpack.dev-server.url}')
-    String webpackUrl
+    String devServerUrl
+
+    @Value('${webpack.dev-server.enabled}')
+    Boolean devServerEnabled
 
     def bundle = { attrs ->
+        log.info "bundle: $attrs - $devServerUrl - $devServerEnabled"
         def bundleName = attrs.bundle ?: DEFAULT_BUNDLE_NAME
 
-        if(Environment.currentEnvironment == Environment.DEVELOPMENT && webpackUrl)
-            out << "<script type='text/javascript' src='${webpackUrl}/assets/${bundleName}' />"
+        if(attrs.devServer == 'true' && devServerEnabled && Environment.currentEnvironment == Environment.DEVELOPMENT)
+            out << "<script type='text/javascript' src='${devServerUrl}/assets/${bundleName}' />"
         else
             out << "${asset.javascript(src: bundleName)}"
     }
