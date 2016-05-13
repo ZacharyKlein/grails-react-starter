@@ -46,8 +46,6 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -56,53 +54,13 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _hello = __webpack_require__(168);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by zak on 5/3/16.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-	__webpack_require__(168);
-
-	var Hello = function (_React$Component) {
-	    _inherits(Hello, _React$Component);
-
-	    function Hello() {
-	        _classCallCheck(this, Hello);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).apply(this, arguments));
-	    }
-
-	    _createClass(Hello, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Hello from React!'
-	                ),
-	                _react2.default.createElement('img', { className: 'center', src: __webpack_require__(172) }),
-	                _react2.default.createElement(
-	                    'span',
-	                    { className: 'webpack' },
-	                    ' '
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Hello;
-	}(_react2.default.Component);
-
-	_reactDom2.default.render(_react2.default.createElement(Hello, null), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_hello.Hello, null), document.getElementById('app')); /**
+	                                                                                                               * Created by zak on 5/3/16.
+	                                                                                                               */
 
 /***/ },
 /* 1 */
@@ -20196,13 +20154,76 @@
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Hello = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by zak on 5/13/16.
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+	__webpack_require__(169);
+
+	var Hello = exports.Hello = function (_React$Component) {
+	    _inherits(Hello, _React$Component);
+
+	    function Hello() {
+	        _classCallCheck(this, Hello);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).apply(this, arguments));
+	    }
+
+	    _createClass(Hello, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Hello from React!'
+	                ),
+	                _react2.default.createElement('img', { className: 'center', src: __webpack_require__(174) }),
+	                _react2.default.createElement(
+	                    'span',
+	                    { className: 'webpack' },
+	                    ' '
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Hello;
+	}(_react2.default.Component);
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(169);
+	var content = __webpack_require__(170);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(171)(content, {});
+	var update = __webpack_require__(173)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -20219,21 +20240,21 @@
 	}
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(170)();
+	exports = module.exports = __webpack_require__(171)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "#app {\n    width: 300px;\n    margin: 0 auto;\n    text-align: center;\n}\n\n.webpack {\n    display: block;\n    width: 100px;\n    height: 100px;\n    margin: 0 auto;\n    background-image: url(" + __webpack_require__(173) + ");\n}\n\nimg.center {\n    width: 150px;\n    margin: 0 auto;\n}", ""]);
+	exports.push([module.id, "#app {\n    width: 300px;\n    margin: 0 auto;\n    text-align: center;\n}\n\n.webpack {\n    display: block;\n    width: 100px;\n    height: 100px;\n    margin: 0 auto;\n    background-image: url(" + __webpack_require__(172) + ");\n}\n\nimg.center {\n    width: 150px;\n    margin: 0 auto;\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports) {
 
 	/*
@@ -20289,7 +20310,13 @@
 
 
 /***/ },
-/* 171 */
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a7f7d781d4c72b033b4937cf43dee8bd.gif";
+
+/***/ },
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -20541,16 +20568,10 @@
 
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "69193a615e30f938b9a1612ce1420872.png";
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "a7f7d781d4c72b033b4937cf43dee8bd.gif";
 
 /***/ }
 /******/ ]);

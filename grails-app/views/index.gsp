@@ -61,7 +61,8 @@
 
         </div>
         <!-- The webpack-generated bundle  -->
-        <asset:javascript src="bundle.js" />
+
+        <webpack:bundle file="bundle.js" />
 
     </section>
 </div>
