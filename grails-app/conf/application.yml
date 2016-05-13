@@ -120,3 +120,8 @@ grails:
 endpoints:
     jmx:
         unique-names: true
+
+
+webpack:
+  dev-server:
+    url: http://localhost:3000
