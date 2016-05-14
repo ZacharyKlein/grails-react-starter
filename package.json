@@ -4,7 +4,7 @@
   "description": "A Starter for a basic React/Webpack configuration within a Grails app",
   "main": "index.js",
   "scripts": {
-    "webpack": "node server.js",
+    "start": "node server.js",
     "bundle": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
