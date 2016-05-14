@@ -7,6 +7,7 @@ class WebpackTagLib {
 
     static namespace = "webpack"
     static defaultEncodeAs = [taglib:'none']
+
     static String DEFAULT_BUNDLE_NAME = 'bundle.js'
 
     @Value('${webpack.dev-server.url}')
@@ -16,11 +17,10 @@ class WebpackTagLib {
     Boolean devServerEnabled
 
     def bundle = { attrs ->
-        log.info "bundle: $attrs - $devServerUrl - $devServerEnabled"
         def bundleName = attrs.bundle ?: DEFAULT_BUNDLE_NAME
 
         if(attrs.devServer == 'true' && devServerEnabled && Environment.currentEnvironment == Environment.DEVELOPMENT)
-            out << "<script type='text/javascript' src='${devServerUrl}/assets/${bundleName}' />"
+            out << "<script type='text/javascript' src='${devServerUrl}/assets/${bundleName}'></script>"
         else
             out << "${asset.javascript(src: bundleName)}"
     }
