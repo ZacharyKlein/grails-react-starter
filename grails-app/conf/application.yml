@@ -121,6 +121,8 @@ endpoints:
     jmx:
         unique-names: true
 
+server:
+    port: 8080
 
 webpack:
   dev-server:
