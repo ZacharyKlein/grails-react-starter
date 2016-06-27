@@ -5,13 +5,16 @@ A starter project for a basic React/Webpack configuration within a Grails app, w
 * [React](https://facebook.github.io/react/) - `^15.10.0`
 * [Webpack](https://webpack.github.io/) - `^1.13.0`
 
+Also uses the [mocha](https://mochajs.org) test framework for testing React components.
+
 ##Notes:
 * Gradle-node plugin is used to wrap node/npm tasks and unify the build process
 * Minimal webpack config is provided
 * Configurable `webpack-dev-server` with `react-hot-load` support is provided (includes custom GSP TagLib to handle dynamic linking to WDS bundles)
 * Babel transpiler is used to support JSX & ES6 code
-* Loading images from JSX and from `require`'d CSS is demonstrated 
+* Loading images from JSX and from CSS is demonstrated
 * React-bootstrap is demonstrated
+* Test bootstrap is provided (`mocha` + `expect` + `jsdom`)
 
 ###Please Note!
 **In order to use `react-hot-load` for instant Javascript updates without reloading the page, it will be necesssary to run both the Grails app and the `webpack-dev-server` simultaneously.**
@@ -32,15 +35,19 @@ _(With statically generated `webpack` bundle - you will need to run `webpack` yo
 * Custom Gradle-Node tasks take care of generating the `bundle.js` when the app is started and when the app the packaged (as a war or jar file)
 * E.g, to run webpack in `watch` mode, use `./gradlew npm_run_webpack`, or `npm run webpack` (if you have npm installed locally)
 
+##Tests:
+* React tests can be run via npm: `npm run test`, or with Gradle: `./gradlew npm_run_test`
+
 ##Conventions:
 * React source files are placed under `grails-app/views/src` (this can be changed - edit `webpack.config.js` as desired)
 * Barebones (and annotated) webpack.config.js with babel, css, url and img loaders configured
 * webpack-generated `bundle.js` is placed under `grails-app/assets` and delivered via the Grails Asset Pipeline
+
+##WebpackTagLib:
 * `WebpackTagLib` provided to dynamically load `bundle.js` from `webpack-dev-server` if enabled & running, otherwise loads via asset pipeline. Use the tag `<webpack:bundle bundle='bundle.js' devServer='false' />`. All attributes are optional (defaults shown).
 
 ##Coming soon:
-* Unified test suite (Mocha + `expect.js` for React tests, Spock for Grails unit/integration tests, with optional ability to run together)
-* Demonstrate loading of images/assets from the asset-pipeline from React/JSX
+* Loading of images/assets from the asset-pipeline from React/JSX
 * Redux?
 * Websockets?
 * Suggestions?
