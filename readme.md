@@ -1,8 +1,8 @@
 #Grails/React Starter
 A starter project for a basic React/Webpack configuration within a Grails app, with support for hot-loading with `webpack-dev-server`.
 
-* [Grails](https://grails.org) - `3.1.6`
-* [React](https://facebook.github.io/react/) - `^15.0.1`
+* [Grails](https://grails.org) - `3.1.8`
+* [React](https://facebook.github.io/react/) - `^15.10.0`
 * [Webpack](https://webpack.github.io/) - `^1.13.0`
 
 ##Notes:
