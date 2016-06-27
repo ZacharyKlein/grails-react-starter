@@ -128,3 +128,5 @@ webpack:
   dev-server:
     enabled: true
     url: http://localhost:3000
+  asset:
+    path: '/assets/'

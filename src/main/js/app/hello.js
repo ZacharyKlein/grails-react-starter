@@ -42,7 +42,7 @@ class Hello extends React.Component {
                 <Modal.Body>
                     <h4>Brought to you by React, Webpack & Grails</h4>
 
-                    <p>Using React 15.0.1, webpack 1.13.0, Grails 3.1.6</p>
+                    <p>Using React 15.10.0, webpack 1.13.0, Grails 3.1.8</p>
                     <div className="center">
                         <span className="about-react-logo">&nbsp;</span>
                         <span className="about-webpack-logo">&nbsp;</span>
